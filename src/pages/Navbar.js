@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -19,7 +19,13 @@ const Navbar = () => {
   return (
     <>
       <div>
-        <Link to="#home">Home</Link>
+        <NavLink to="/home">Home</NavLink>
+      </div>
+      <div>
+        <NavLink to="/admin">Admin</NavLink>
+      </div>
+      <div>
+        <NavLink to="/donor">Donor</NavLink>
       </div>
       <h1>navbar</h1>
       <h1>navbar</h1>

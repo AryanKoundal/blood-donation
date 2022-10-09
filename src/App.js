@@ -8,17 +8,15 @@ import { BloodBank } from "./pages/BloodBank";
 import { Donor } from "./pages/Donor";
 
 import { Patient } from "./pages/Patient";
-import { BrowserRouter as Router, Routes, Route }
-  from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route }from 'react-router-dom';
 
 
 function App() {
   return (
     <>
       <h1>hello</h1>
-      <Home />
+      <Router>
       <Navbar />
-      {/* <Router>
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/admin' element={<Admin />} />
@@ -26,7 +24,7 @@ function App() {
           <Route exact path='/donor' element={<Donor />} />
           <Route exact path='/patient' element={<Patient />} />
         </Routes>
-      </Router> */}
+      </Router>
     </>
   );
 }

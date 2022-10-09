@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Donor = () => {
   return (
-    <div>Donor</div>
+    <div>This is Donor</div>
   )
 }
