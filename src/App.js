@@ -7,8 +7,7 @@ import { BloodBank } from "./pages/BloodBank";
 import { Admin } from "./pages/Admin";
 import { Donor } from "./pages/Donor";
 import { Patient } from "./pages/Patient";
-import { BrowserRouter as Router, Routes, Route }
-  from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 function App() {
