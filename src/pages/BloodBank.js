@@ -3,7 +3,7 @@ import React from 'react'
 export const BloodBank = () => {
   return (
     <>
-      <div><h1>BloodBank</h1></div>
+      <div></div>
       <div className='flex justify-center mt-10'>
         <table class="table-fixed ">
           <thead>

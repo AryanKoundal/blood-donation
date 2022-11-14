@@ -1,28 +1,27 @@
 import React, { useState } from 'react';
+import background from '/blood_donation/blood_donation/src/images/background.jpg';
 
 const Home = () => {
   return (
-    <>
-      <div >This is Home</div>
-
-      <div className='flex justify-center' >
+    <><div className='bg-stone-300 h-screen'>
+      <div className='flex justify-center pt-10 bg-stone-100' >
         {/* button for donor  */}
         <div className=" mx-8">
-          <button type="button" className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#donorModalCenter">
+          <button type="button" className="inline-block px-9 py-6 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#donorModalCenter">
             Donor
           </button>
         </div>
 
         {/* button for patient  */}
         <div className=" mx-8">
-          <button type="button" className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#patientModalCenter">
+          <button type="button" className="inline-block px-9 py-6 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#patientModalCenter">
             Patient
           </button>
         </div>
 
         {/* button for blood bank  */}
         <div className=" mx-8">
-          <button type="button" className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#bloodBankModalCenter">
+          <button type="button" className="inline-block px-6 py-6 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#bloodBankModalCenter">
             Blood Bank
           </button>
         </div>
@@ -42,7 +41,14 @@ const Home = () => {
                 data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body relative p-4">
-              <p>This is a vertically centered modal.</p>
+              <p>One donation can save multiple lives. Here are the facts:
+
+                Just 1 donation can save up to 3 lives.
+                The average red blood cell transfusion is 3 pints (or 3 whole-blood donations).
+                More than 1 million people every year are diagnosed with cancer for the first time. Many of them will need blood—sometimes daily—during chemotherapy.
+                More than 38,000 blood donations are needed every day.
+                Type O-negative whole blood can be transfused to people with any blood type, but this type of blood is rare, and supplies of it are low.
+                Type AB plasma can be transfused to patients with all other blood types, but it's also in short supply.</p>
             </div>
             <div
               className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -69,7 +75,7 @@ const Home = () => {
                 data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body relative p-4">
-              <p>This is a vertically centered modal.</p>
+              <p>It's important to know your blood type—whether you're a donor or a patient in need of blood products.You may be surprised to learn how many people will benefit from your generous gift, no matter what type you have.</p>
             </div>
             <div
               className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -96,7 +102,7 @@ const Home = () => {
                 data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body relative p-4">
-              <p>This is a vertically centered modal.</p>
+              <p>Blood banking is the process that takes place in the lab to make sure that donated blood, or blood products, are safe before they are used in blood transfusions and other medical procedures. Blood banking includes typing the blood for transfusion and testing for infectious diseases.</p>
             </div>
             <div
               className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -109,6 +115,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div>
+        <img src={background} alt="background" className='mx-auto h-full' />
+      </div>
+    </div>
     </>
   )
 }
