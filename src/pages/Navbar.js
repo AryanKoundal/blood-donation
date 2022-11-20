@@ -42,6 +42,7 @@ const navigation = [
   { name: 'Patient', to: '/patient', current: false },
   { name: 'Blood Bank', to: '/blood-bank', current: false },
   { name: 'Admin', to: '/admin', current: false },
+  {name: 'List', to :'/listPat' , current: false },
 
 ]
 

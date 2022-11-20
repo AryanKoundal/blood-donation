@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import background from '/blood_donation/blood_donation/src/images/background.jpg';
+import background from '../images/background.jpg';
 
 const Home = () => {
   return (
